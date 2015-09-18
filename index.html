@@ -30,13 +30,13 @@ html, body {
 <script src='src/three.min.js'></script>
 <script>
 var qs = function(s, all) {
-  return (all === true) ? document.querySelectorAll(s) : document.querySelector(s);
+  return (all === true) ? document.querySelectorAll(s) : document.querySelector(s)
 }
 
 var canvas, context, camera, scene, raycaster, renderer, texture;
 
 var mouse = new THREE.Vector2(), INTERSECTED;
-var radius = 100, theta = 0;
+var radius = 100, amout = 400, size = 20, theta = 0;
 
 // setTimeout(init, 1000);
 init();
@@ -65,13 +65,13 @@ function init() {
   light.position.set( 1, 1, 1 ).normalize();
   scene.add( light );
 
-  var geometry = new THREE.PlaneGeometry( 80, 80, 80 );
+  var geometry = new THREE.BoxGeometry( size, size, size );
   // var material = new THREE.MeshLambertMaterial( { color: Math.random() * 0xffffff } )
   texture = new THREE.Texture(qs('.sample'))
   texture.minFilter = THREE.NearestFilter
   var material = new THREE.MeshBasicMaterial( { map: texture } )
   
-  for ( var i = 0; i < 400; i ++ ) {
+  for ( var i = 0; i < amout; i ++ ) {
 
     var object = new THREE.Mesh( geometry, material );
 
@@ -91,7 +91,7 @@ function init() {
 
   }
 
-  raycaster = new THREE.Raycaster();
+  // raycaster = new THREE.Raycaster();
 
   renderer = new THREE.WebGLRenderer({alpha: true});
   // renderer.setClearColor( 0xf0f0f0 );
@@ -155,7 +155,7 @@ function render() {
 
   // find intersections
 
-  raycaster.setFromCamera( mouse, camera );
+  // raycaster.setFromCamera( mouse, camera );
   texture.needsUpdate = true;
 
   // if ( texture ) texture.needsUpdate = true;
@@ -189,19 +189,4 @@ function render() {
   renderer.render( scene, camera );
 
 }
-</script>
-<!-- :(
-<script src='getusermedia.bundle.js'></script>
-<script>
-console.log(window.getUserMedia)
-window.getUserMedia(function (err, stream) {
-    // if the browser doesn't support user media
-    // or the user says "no" the error gets passed
-    // as the first argument.
-    if (err) {
-       console.log('failed');
-    } else {
-       console.log('got a stream', stream);  
-    }
-});
 </script>

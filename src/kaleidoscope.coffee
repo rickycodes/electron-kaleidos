@@ -51,7 +51,7 @@ class Kaleidoscope
       @context.rotate @offsetRotation
       @context.scale @offsetScale, @offsetScale
 
-      # @context.rect(200,200,200,200);
+      # @context.rect(80,80,80,80);
       # @context.clip()
       
       @context.fill()
