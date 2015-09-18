@@ -1,0 +1,18 @@
+{
+  "name": "electron-kaleidos",
+  "version": "0.0.1",
+  "main": "main.js",
+  "scripts": {
+    "build": "coffee -cj app.js src/*.coffee",
+    "start": "npm run build && electron .",
+    "watch": "npm run watch:coffee",
+    "watch:coffee": "coffee -cwj app.js src/*.coffee"
+  },
+  "devDependencies": {
+    "coffee": "^1.2.0",
+    "electron": "^0.4.1"
+  },
+  "dependencies": {
+    "three.js": "^0.1.0"
+  }
+}
