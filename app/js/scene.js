@@ -2,7 +2,7 @@ var qs = function(s, all) {
   return (all === true) ? document.querySelectorAll(s) : document.querySelector(s)
 }
 
-var canvas, context, camera, scene, raycaster, renderer, texture;
+var three, canvas, context, camera, scene, raycaster, renderer, texture;
 
 var mouse = new THREE.Vector2(), INTERSECTED;
 var radius = 100, amout = 400, size = 20, theta = 0;
@@ -13,6 +13,7 @@ animate();
 function init() {
 
   canvas = document.createElement('canvas')
+  three = document.createElement('div')
   context = canvas.getContext('2d')
   
   canvas.setAttribute('class','sample')
@@ -20,9 +21,12 @@ function init() {
   canvas.setAttribute('height','400')
   canvas.style.display = 'none'
 
+  three.setAttribute('class','three')
+
   context.drawImage(qs('.kaleidoscope'),-600,-600)
 
   qs('body').appendChild(canvas)
+  qs('body').appendChild(three)
 
   camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 10000 );
 
