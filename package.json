@@ -6,7 +6,7 @@
     "build": "webpack app/js/*.js app.js",
     "start": "npm run build && electron .",
     "watch": "npm run watch:js",
-    "watch:js": "webpack app/js/*.js app.js --watch"
+    "watch:js": "webpack app/js/*.js app.js -w"
   },
   "devDependencies": {
     "electron": "^0.4.1",
