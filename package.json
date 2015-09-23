@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "main": "main.js",
   "scripts": {
-    "build": "webpack app/node_modules/**/*.js app.js",
+    "build": "webpack ./app/index.js ./app/static/index.js",
     "start": "npm run build && electron .",
     "watch": "npm run watch:js",
-    "watch:js": "webpack app/node_modules/**/*.js app.js -w"
+    "watch:js": "webpack ./app/index.js ./app/static/index.js -w"
   },
   "devDependencies": {
     "electron-prebuilt": "^0.33.0",
