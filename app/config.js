@@ -1,3 +1,5 @@
+'use strict'
+
 const config = {
   interactive: true,
   ease: 0.1,
