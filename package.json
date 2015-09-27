@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "main": "main.js",
   "scripts": {
-    "build": "eslint ./app/index.js  ./app/node_modules/ && webpack ./app/index.js ./app/static/index.js",
+    "build": "eslint ./app/index.js  ./app/node_modules/ && webpack ./app/index.js ./app/static/index.js --display-modules",
     "start": "npm run build && electron .",
     "watch": "npm run watch:js",
-    "watch:js": "webpack ./app/index.js ./app/static/index.js -w"
+    "watch:js": "webpack ./app/index.js ./app/static/index.js -w --display-modules"
   },
   "devDependencies": {
     "electron-prebuilt": "^0.33.0",

@@ -2,8 +2,5 @@
 
 const config = require('./config.js')
 
-const kaleidoscope = require('kaleidoscope')
-const scene = require('scene')
-
-kaleidoscope(config)
-scene(config)
+require('kaleidoscope')(config)
+require('scene')(config)
