@@ -4,6 +4,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font: 100% sans-serif;
 }
 .kaleidoscope {
   position: absolute;
@@ -13,7 +14,18 @@ html, body {
   position: absolute;
   z-index: 2;
 }
+.kaleidoscope, .three {
+  top: 0;
+  left: 0;
+}
 .sample {
   position: absolute;
   z-index: 3;
+}
+.preload {
+  position: relative;
+  z-index: 4;
+  background: white;
+  display: inline-block;
+  padding: 20px;
 }
