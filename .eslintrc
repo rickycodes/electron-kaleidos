@@ -20,7 +20,8 @@
     "block-scoped-var": 2,
     "no-else-return": 2,
     "no-floating-decimal": 2,
-    "no-self-compare": 2
+    "no-self-compare": 2,
+    "space-before-function-paren": 2
   }
 }
 
