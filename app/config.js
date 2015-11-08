@@ -1,6 +1,7 @@
 'use strict'
 
 const config = {
+  track: 'https://raw.githubusercontent.com/rickycodes/tones/master/the-knife.mp3',
   interactive: true,
   ease: 0.1,
   image: 'img/tree.jpg',
