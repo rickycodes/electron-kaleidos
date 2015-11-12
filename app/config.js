@@ -1,7 +1,7 @@
 'use strict'
 
 const config = {
-  track: 'https://raw.githubusercontent.com/rickycodes/tones/master/the-knife.mp3',
+  track: 'https://raw.githubusercontent.com/rickycodes/tones/master/futurecop.mp3',
   interactive: true,
   ease: 0.1,
   image: 'http://i.imgur.com/j40ZRls.jpg',
