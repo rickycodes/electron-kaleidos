@@ -1,6 +1,9 @@
 ## electron-kaleidos
 An example <a href='http://electron.atom.io/' target='_blank'>Electron</a> app
 
+![auto](http://i.imgur.com/r2VohjG.gif)
+![interactive](http://i.imgur.com/vezTvZS.gif)
+
 ## install
 1. Clone the repo
 2. `cd` into cloned repo, ie: `cd ~/projects/electron-kaleidos/`
