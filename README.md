@@ -1,4 +1,6 @@
 ## electron-kaleidos
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/rickycodes/electron-kaleidos.svg)](https://greenkeeper.io/)
 An example <a href='http://electron.atom.io/' target='_blank'>Electron</a> app
 
 ![auto](http://i.imgur.com/r2VohjG.gif)
