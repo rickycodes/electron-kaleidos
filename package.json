@@ -9,9 +9,9 @@
     "watch:js": "webpack -w --display-modules"
   },
   "devDependencies": {
-    "electron-prebuilt": "^0.33.0",
-    "eslint": "^1.5.1",
-    "eslint-loader": "^1.1.0",
-    "webpack": "^1.12.2"
+    "electron-prebuilt": "^1.4.13",
+    "eslint": "^4.19.1",
+    "eslint-loader": "^2.0.0",
+    "webpack": "^4.6.0"
   }
 }
